@@ -1,8 +1,12 @@
 #ifndef OFFSET_H
 #define OFFSET_H
 
+#ifndef MM_STRUCT_SZ
+#define MM_STRUCT_SZ 0x400
+#endif
+
 #if defined(APP_PAYLOAD) && APP_PAYLOAD
-#define BUILD_VARIANT_LABEL "dm3q-S9180ZHS8FZF5-app"
+#define BUILD_VARIANT_LABEL "dm3q-S9180ZHS8FZF5-app-physical-p0-oracle"
 #define APP_PHYS_P0_ORACLE 1
 #else
 #define BUILD_VARIANT_LABEL "dm3q-S9180ZHS8FZF5-root-umh"
